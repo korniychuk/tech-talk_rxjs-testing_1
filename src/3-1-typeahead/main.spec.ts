@@ -52,4 +52,45 @@ describe('Marble testing in RxJS', () => {
     });
   });
 
+  it('Should cancel active requests if another value is emitted', () => {
+    testScheduler.run(({ cold, expectObservable }) => {
+      const searchTerm = 'testing';
+      const breweries = [{ name: 'Brewery 1' }];
+
+      const source$ = cold('a 250ms b', {
+        a: { target: { value: 'first' } },
+        b: { target: { value: 'first' } },
+      });
+      const final$ = source$.pipe(
+        breweryTypeahead({
+          getJSON: () => $$.of(breweries).pipe($.delay(300)),
+        } as any),
+      );
+      const expected = '500ms c';
+      const expectedValues = { c: ['Brewery 1'] };
+
+      expectObservable(final$).toBe(expected, expectedValues);
+    });
+  });
+
+  it('Should ignore ajax errors', () => {
+    testScheduler.run(({ cold, expectObservable }) => {
+      const searchTerm = 'testing';
+      const breweries = [{ name: 'Brewery 1' }];
+
+      const source$ = cold('a 250ms b', {
+        a: { target: { value: 'first' } },
+        b: { target: { value: 'first' } },
+      });
+      const final$ = source$.pipe(
+        breweryTypeahead({
+          getJSON: () => $$.throwError('error'),
+        } as any),
+      );
+      const expected = '';
+
+      expectObservable(final$).toBe(expected);
+    });
+  });
+
 });
