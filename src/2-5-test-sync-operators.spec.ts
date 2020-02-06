@@ -13,7 +13,7 @@ describe('Marble testing in RxJS', () => {
 
   it('ok', $$.noop);
 
-  // it('', () => {
+  // it('Should let you test synchronous operations', () => {
   //   testScheduler.run(({ expectObservable }) => {
   //     const source$ = $$.of(1, 2, 3, 4, 5);
   //     const expected = 'abcde|';
@@ -22,7 +22,7 @@ describe('Marble testing in RxJS', () => {
   //   });
   // });
 
-  // it('', () => { // !
+  // it('Should let you test synchronous operations', () => { // !
   //   testScheduler.run(({ expectObservable }) => {
   //     const source$ = $$.of(1, 2, 3, 4, 5);
   //     const expected = '(abcde|)';
