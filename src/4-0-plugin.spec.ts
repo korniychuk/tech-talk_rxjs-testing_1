@@ -1,5 +1,6 @@
 import * as $$ from 'rxjs';
 import * as $ from 'rxjs/operators';
+import { marbles } from 'rxjs-marbles';
 
 describe('rxjs-marbles', () => {
 
@@ -10,8 +11,9 @@ describe('rxjs-marbles', () => {
     const expected =        '--b-c-d-|';
 
     const destination = source.pipe(
-      map(value => String.fromCharCode(value.charCodeAt(0) + 1)),
+      $.map(value => String.fromCharCode(+value.charCodeAt(0) + 1)),
     );
+
     m.expect(destination).toBeObservable(expected);
     m.expect(source).toHaveSubscriptions(subs);
   }));
