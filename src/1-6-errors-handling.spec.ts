@@ -66,4 +66,29 @@ describe('Subscribe & Assert Testing in RxJS', () => {
   //   });
   // });
 
+  // it('Should let you test errors and error messages', () => {
+  //   const source$ = $$.of({ first: 'Elon', last: 'Musk' }, null).pipe(
+  //     $.map(v => `${ v!.first } ${ v!.last }`),
+  //     $.catchError(() => {
+  //       throw 'Invalid Name'; // eslint-disable-line no-throw-literal
+  //       // throw new Error('Invalid Name');
+  //       // return  $$.throwError(new Error('Invalid Name'));
+  //     }),
+  //   );
+  //
+  //   const expected = ['Elon Musk', 'Invalid Name'];
+  //   const res: any[] = [];
+  //
+  //   source$.subscribe({
+  //     next: (val) => {
+  //       res.push(val);
+  //     },
+  //     error: (err) => {
+  //       res.push(err);
+  //     },
+  //   });
+  //
+  //   expect(res).toEqual(expected);
+  // });
+
 });
