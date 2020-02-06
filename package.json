@@ -1,16 +1,16 @@
 {
-  "name": "wallaby-ts-webpack",
-  "description": "",
+  "name": "tech-talk_rxjs-testing_1",
+  "description": "TechTalk: RxJS Marbles Testing",
   "license": "MIT",
   "private": true,
   "version": "1.0.0",
   "bugs": {
-    "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
+    "url": "https://github.com/korniychuk/tech-talk_rxjs-testing_1/issues"
   },
-  "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
+  "homepage": "https://github.com/korniychuk/tech-talk_rxjs-testing_1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
+    "url": "git@github.com:korniychuk/tech-talk_rxjs-testing_1.git"
   },
   "engines": {
     "node": "^12.14.1",

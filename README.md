@@ -16,7 +16,7 @@ yarn install
 ### Wallaby JS
 
 * Wallaby JS works out of the box without any additional config  
-  Notice: How to run in "Without Configuration" mode ([Official Wallaby JS Guide]
+  Notice: How to run in "Without Configuration" mode ([Official Wallaby JS Guide](https://wallabyjs.com/docs/intro/config.html#automatic-configuration))
 
 ### Jest
 
