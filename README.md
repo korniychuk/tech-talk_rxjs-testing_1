@@ -12,7 +12,6 @@ yarn install
 
 ## How to run tests
 
-
 ### Wallaby JS
 
 * Wallaby JS works out of the box without any additional config  
@@ -34,6 +33,31 @@ yarn install
 
 * Just show problems `npm run lint`
 * Fix problems if it is possible `npm run lint:fix`
+
+## Other
+
+### Marbles vs Subscribe & assert pros/cons
+
+**Marble testing:** 
+
+✅ Expressive tests using marbles
+✅ More easily create & visualize streams
+✅ Test accuracy of values & timing
+
+❌ Fair amount of setup (resolved via `rxjs-marbles`)
+❌ Req. knowledge of RxJS Testing helpers
+❌ Req. knowledge of marble syntax
+
+**Subscribe and assert testing:** 
+
+✅ Less setup required
+✅ Use typical testing APIs
+✅ Use typical testing patterns
+
+❌ Must manage async test completion
+❌ Extra boilerplate for assertions
+❌ It is very difficult to test all behavioral branches
+❌ Some risk of write fake tests
 
 ## Author
 
