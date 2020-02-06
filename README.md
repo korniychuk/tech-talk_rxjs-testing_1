@@ -69,6 +69,12 @@ yarn install
 ❌ It is very difficult to test all behavioral branches  
 ❌ Some risk of write fake tests  
 
+## Links
+
+![GitHub Repository](resources/qr-git-repo.png)  
+
+![GitHub Repository](resources/qr-korniychuk.pro.png)
+
 ## Author
 
 | [<img src="https://www.korniychuk.pro/avatar.jpg" width="100px;"/><br /><sub>Anton Korniychuk</sub>](https://korniychuk.pro) |
