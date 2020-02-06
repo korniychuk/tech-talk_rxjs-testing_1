@@ -3,7 +3,7 @@ import * as $$ from 'rxjs';
 
 describe('Subscribe & Assert Testing in RxJS', () => {
 
-  it('Should compare emitted values on completion with toArray', (done) => {
+  it('Should compare emitted with delay values', (done) => {
     const source$ = $$.of('Ready', 'Set', 'Go!').pipe(
       $.mergeMap((message, index) => $$.of(message).pipe(
         $.delay(index * 100),
@@ -20,7 +20,7 @@ describe('Subscribe & Assert Testing in RxJS', () => {
     });
   });
 
-  // it('Should compare emitted values on completion with toArray', async () => {
+  // it('Should compare emitted with delay values via async/await', async () => {
   //   const source$ = $$.of('Ready', 'Set', 'Go!').pipe(
   //     $.mergeMap((message, index) => $$.of(message).pipe(
   //       $.delay(index * 100),
