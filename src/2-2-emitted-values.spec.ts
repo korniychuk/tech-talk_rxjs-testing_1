@@ -21,7 +21,7 @@ describe('Marble testing in RxJS', () => {
     });
   });
 
-  // it('Should allow configuration of emitted values', () => {
+  // it('Should allow configuration of emitted values', () => { // !
   //   testScheduler.run(({ cold, expectObservable }) => {
   //     const source$ = cold('--a-b---c', { a: 1, b: 2, c: 3 });
   //     const final$ = source$.pipe($.map(v => v * 10));
