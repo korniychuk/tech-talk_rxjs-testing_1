@@ -1,7 +1,5 @@
 # TechTalk: RxJS Marbles Testing 
 
-*Notice: If you have any propositions feel free to make an issue or create a pull request.*
-
 ![ Diagram Example (c) Ultimate Courses -> RxJS MasterClass](resources/marble-example.png)
 
 * `-` each dash represents a frame of virtual time
