@@ -3,7 +3,7 @@ const path = require('path');
 process.chdir(__dirname);
 
 module.exports = {
-  entry: './index.ts',
+  entry: './main.ts',
   mode: 'development',
   module: {
     rules: [
@@ -18,7 +18,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'index.js',
+    filename: 'dist.js',
     path: path.resolve(__dirname),
   },
 };
