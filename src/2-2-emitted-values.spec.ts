@@ -11,17 +11,24 @@ describe('Marble testing in RxJS', () => {
     });
   });
 
-  it('Should convert ASCII diagrams into observables', () => {
+  it('Should allow configuration of emitted values', () => {
     testScheduler.run(({ cold, expectObservable }) => {
       const source$ = cold('--a-b---c');
+      // const final$ = source$.pipe($.map(v => v * 10));
       const expected =     '--a-b---c';
 
       expectObservable(source$).toBe(expected);
     });
   });
 
+  // it('Should allow configuration of emitted values', () => {
+  //   testScheduler.run(({ cold, expectObservable }) => {
+  //     const source$ = cold('--a-b---c', { a: 1, b: 2, c: 3 });
+  //     const final$ = source$.pipe($.map(v => v * 10));
+  //     const expected = '--a-b---c';
   //
-  // Show debug messages!!!!!!!!!!!!!!!!!!
-  //
+  //     expectObservable(final$).toBe(expected, { a: 10, b: 20, c: 30 });
+  //   });
+  // });
 
 });
