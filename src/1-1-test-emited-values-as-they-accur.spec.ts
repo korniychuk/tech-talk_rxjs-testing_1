@@ -46,4 +46,21 @@ describe('Subscribe & Assert Testing in RxJS', () => {
   //     expect(val).toBe(expected[index++]);
   //   }, null, done);
   // });
+
+  // it('Should compare each emitted value', (done) => {
+  //   const source$ = $$.of(1, 2, 3);
+  //   const final$ = source$.pipe(
+  //     $.map(v => v * 10),
+  //   );
+  //
+  //   const expected = [10, 20, 30];
+  //   let index = 0;
+  //
+  //   final$.subscribe({
+  //     next: (val) => {
+  //       expect(val).toBe(expected[index++]);
+  //     },
+  //     complete: done,
+  //   });
+  // });
 });
