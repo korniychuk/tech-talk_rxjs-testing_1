@@ -2,6 +2,16 @@
 
 *Notice: If you have any propositions feel free to make an issue or create a pull request.*
 
+![ Diagram Example (c) Ultimate Courses -> RxJS MasterClass](resources/marble-example.png)
+
+* `-` each dash represents a frame of virtual time
+* `[a-z][0-9]` represents emitted values, ex. `-a--b-`
+* `#` represents errors, ex. `-a--b-#`
+* `()` represents synchronous groupings, ex. `-(abc)---`
+* `|` represents completion, ex. `(abc|)`
+
+![ Code Example (c) Ultimate Courses -> RxJS MasterClass](resources/marble-code-example.png)
+
 ### Quick Start
 
 ```bash
