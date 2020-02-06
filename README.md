@@ -71,9 +71,9 @@ yarn install
 
 ## Links
 
-[![GitHub Repository](resources/qr-git-repo.png)](https://github.com/korniychuk/tech-talk_rxjs-testing_1)  
+[![GitHub Repository](resources/qr-git-repo.png) GitHub Repository](https://github.com/korniychuk/tech-talk_rxjs-testing_1)  
 
-[![GitHub Repository](resources/qr-korniychuk.pro.png)](https://www.korniychuk.pro)
+[![GitHub Repository](resources/qr-korniychuk.pro.png) www.korniychuk.pro](https://www.korniychuk.pro)
 
 ## Author
 
