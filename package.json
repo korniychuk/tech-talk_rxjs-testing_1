@@ -13,13 +13,13 @@
     "url": "git@github.com:korniychuk/tech-talk_rxjs-testing_1.git"
   },
   "engines": {
-    "node": "^12.14.1",
-    "npm": "^6.13.4",
-    "yarn": "^1.21.1"
+    "node": ">=12.14.1",
+    "npm": ">=6.13.4",
+    "yarn": ">=1.21.1"
   },
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.build.json",
-    "build:prod": "npm run build",
+    "build-1": "webpack --config src/3-0-typeahead/webpack.config.js",
+    "build-2": "webpack --config src/3-1-typeahead/webpack.config.js",
     "lint": "eslint --ext .js,.ts src/**",
     "lint:fix": "npm run lint -- --fix",
     "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check",
@@ -52,7 +52,10 @@
     "jest-extended": "~0.11.5",
     "rimraf": "~3.0.0",
     "rxjs-marbles": "~5.0.4",
-    "typescript": "~3.7.5"
+    "ts-loader": "~6.2.1",
+    "typescript": "~3.7.5",
+    "webpack": "~4.41.5",
+    "webpack-cli": "~3.3.10"
   },
   "husky": {
     "hooks": {

@@ -22,10 +22,7 @@
     "types": [
       "jest",
       "jest-extended"
-    ],
-    "outDir": "./dist",
-    "baseUrl": "./src",
-    "rootDir": "./src"
+    ]
   },
   "include": [
     "src/**/*.ts"
